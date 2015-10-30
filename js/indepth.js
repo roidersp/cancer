@@ -1,17 +1,19 @@
 var disqus_shortname = 'juanfutbol';
 var disqus_identifier;
-var disqus_url="animated-football-league";
+var disqus_url="youll-never-walk-alone";
 var disqus_number_c=2;
 var disqus_per_page=3;
 var tamaño_total=1920;
+var ventana_alto = $(window).height();
+var ventana_ancho = $(window).width();
 
 var numeroImages2=8;
  var slider_on2=false;
  var intervalID2;
 var posicion_slider2=0;
 var share;
+var num_carrusel=0;
 
-console.log("test");
 console.log($("#indepth_intro .indepth_left").outerHeight());
 
 $("#indepth_corona").css({
@@ -96,9 +98,7 @@ var indepth_menu=function(){
 			  $("#indepth_menu").fadeOut();
 		 }
 		 
-		  $(".indepth_share").show();
-		 
-		
+		  $(".indepth_share").show();		
 	});
 	
 	 $('#indepth_footer').waypoint(function(direction) {
@@ -111,9 +111,6 @@ var indepth_menu=function(){
 		
 	},{offset: 'bottom-in-view'});
 	
-	
-	
-	
 	$(".indepth_page_content").waypoint(function(direction){
 		 $(".indepth_share").show();
 	},{offset: '70px'});
@@ -125,10 +122,6 @@ var indepth_menu=function(){
 	
 	$("#indepth_page_content").waypoint(function(direction){
 	},{offset: 'bottom-in-view'});
-	
-	 
-	 
-
 }
 
 
@@ -231,10 +224,7 @@ $(document).ready(function(){
 	var ventana_ancho = $(window).width();
 	
 	
-	$("#indepth_carrusel_container").css({
-		 width : ventana_ancho + "px",
-		 height : ventana_alto + "px"
-	});
+	carrusel(6);
 	
 	$('#indepth_cover .indepth_parallax_back').css("height",(ventana_alto-100)+"px");
 	//$("#indepth_break_2").css("height",)
@@ -263,21 +253,97 @@ $(document).ready(function(){
 		//$('#indepth_cover').css("height",(ventana_alto-60)+"px");
 });
 
+
+carrusel = function(num){
+	var ventana_alto = $(window).height();
+	var ventana_ancho = $(window).width();
+	
+	if(ventana_ancho>600){
+	 	$("#indepth_carrusel_left").css("max-height",(ventana_alto*.9)+"px");
+	 	$("#indepth_carrusel_container").css({
+		 width : ventana_ancho + "px",
+		 height : ventana_alto + "px"
+	});
+	$(".indepth_carrusel_item").css({
+		width : ventana_ancho + "px"
+	});
+ 	}
+	
+	
+	
+	
+	
+	
+	
+	$(".indepth_carrusel_cont").css("width",(num*100)+"%");
+
+}
+
+
+$(document).on("click",".indepth_carrusel_thumps",function(){
+	num_m = $(this).attr("num");
+		
+	cambiar_carrusel(num_m);
+	
+});
+
+var cambiar_carrusel= function(num_m){
+	$(".indepth_carrusel_cont").animate({
+		"margin-left" : num_m * -100 + "%"
+	},200);
+	
+	$(".indepth_cont_car").fadeOut();
+	$("#indepth_car_item"+num_m).fadeIn();
+	
+	$(".indepth_carrusel_thumps").removeClass("active");
+	$("#indepth_carrusel_thumps"+num_m).addClass("active");
+	
+	$(".indepth_cont_car").removeClass("active");
+	
+	$("#indepth_car_item"+num_m).addClass("active");
+	
+	num_carrusel = num_m;
+	
+	if(num_carrusel==0){
+		$("#carrusel_izq").hide();
+	}else{
+		$("#carrusel_izq").show();
+	}
+	
+	if(num_carrusel==5){
+		$("#carrusel_der").hide();
+	}else{
+		$("#carrusel_der").show();
+	}
+}
+
+$(document).on("click","#carrusel_izq",function(){
+	
+	if(num_carrusel>0){
+		var num_c=num_carrusel-1;
+		cambiar_carrusel(num_c);
+	}
+});
+
+$(document).on("click","#carrusel_der",function(){
+	
+	if(num_carrusel<5){
+		
+		var num_c=num_carrusel+1;
+		cambiar_carrusel(num_c);
+		
+	}
+});
+
 $(window).on("resize", function(){
 	indepth_sizeAdjust(false);
 	var ventana_alto = $(window).height();
 	var ventana_ancho = $(window).width();
 	
-	$(".indepth_carrusel_item").css({
-		width : ventana_ancho + "px"
-	});
+	carrusel(6);
 	
-	$("#indepth_carrusel_container").css({
-		 width : ventana_ancho + "px",
-		 height : ventana_alto + "px"
-	});
 	
-    	//$('#indepth_cover').css("height",(ventana_alto-60)+"px");
+	
     	 if(ventana_ancho>600){
 	 	
  	}

@@ -1,14 +1,12 @@
 @font-face {
     font-family: "Bebas";
-    src: url(../css/BebasNeue.otf);
+    src: url(../fonts/BebasNeue.otf);
 }
-
 
 @font-face {
     font-family: "Bebas L";
-    src: url(../css/BebasNeueLight.otf);
+    src: url(../fonts/BebasNeueLight.otf);
 }
-
 
 #recommended-wrapper{
 	display: none;
@@ -52,13 +50,11 @@
 
 .indepth_share_item.twitter{
 	background-image: url(../images/boton_twitter.png);
-	
 }
 
 .indepth_share_item.twitter:hover{
 	background-color: #02B2F7;
 }
-
 
 .indepth_share_item.whatsapp{
 	background-image: url(../images/boton_whatsapp.png);
@@ -68,7 +64,6 @@
 .indepth_share_item.whatsapp:hover{
 	background-color: #85D86D;
 }
-
 
 #com{
 	width: 90%;
@@ -185,7 +180,7 @@
 
 #indepth_cover_titulo{
 	text-align: center;
-	font-family: 'Bebas';
+	font-family: 'Roboto Condensed';
 	font-weight: bold;
 	font-size: 118px;
 	line-height: 100px;
@@ -305,6 +300,7 @@
 
 #indepth_carrusel_container{
 	background-color: black;
+	position: relative;
 }
 
 .indepth_carrusel_cont{
@@ -330,13 +326,14 @@
 .indepth_content_title{
 	font-size: 70px;
 	font-weight: 300;
-	font-family: 'Bebas L';
+	font-family: 'Roboto Condensed';
 	line-height: 65px;
 	margin-bottom: 15px;
 }
 
 .indepth_content{
-	width: 50%;
+	width: 46%;
+	padding: 2%;
 	font-size: 20px;
 	font-weight: 300;
 	font-family: 'Roboto Condensed';
@@ -346,28 +343,6 @@
 	float: left;
 }
 
-.indepth_tatuajes_text{
-	font-size: 20px;
-	font-family: 'Roboto condensed';
-	position: absolute;
-	font-weight: 300;
-}
-
-.indepth_tatuaje_item{
-	display: inline-block;
-	position: relative;
-}
-
-.indepth_img_over{
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0;
-}
-
-.indepth_img_over:hover{
-	opacity: 1;
-}
 
 .indepth_tatuajes_imgs{
 	position: absolute;
@@ -407,21 +382,318 @@
 	font-family: 'Roboto Condensed';
 }
 
-.indepth_playera_costado{
-	width: 400px;
-	margin: auto;
+.indepth_carrusel_item{
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	float: left;
 }
 
-.indepth_descargar_boton{
-	width: 154px;
-	height: 37px;
-	margin: 30px auto;
-	background-image: url(../images/BTN-Descargar.png);
+.indepth_carrusel_flecha{
+	width: 130px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background-position: center center;
+	height: 100%;
 	cursor: pointer;
 }
 
-.indepth_descargar_boton:hover{
-	background-image: url(../images/BTN-DescargarOVER.png);
+#carrusel_izq{
+	background-image:  url(../images/carrusel/navegador/leftarrow.png);
+	left: 0;
+}
+
+#carrusel_izq:hover{
+	background-image:  url(../images/carrusel/navegador/leftarrowover.png);
+}
+
+#carrusel_der{
+	background-image:  url(../images/carrusel/navegador/rightarrow.png);
+	right: 0;
+}
+#carrusel_der:hover{
+	background-image:  url(../images/carrusel/navegador/rightarrowover.png);
+	right: 0;
+}
+
+.indpeth_carrusel_in{
+	width: 1000px;
+	color: white;
+}
+
+.indepth_caruusel_title{
+	font-family: 'Roboto Condensed';
+	font-size: 60px;
+}
+
+.indepth_carrusel_text{
+	font-size: 18px;
+	font-family: 'Roboto Condensed';
+	font-weight: 300;
+	
+}
+
+.indepth_carrusel_side{
+	width: 450px;
+	display: inline-block;
+	margin: 20px;
+	position: relative;
+	height: 750px;
+	overflow: scroll;
+}
+
+.indepth_cont_car.active{
+	z-index: 1;
+}
+
+.indepth_cont_car{
+	position: absolute;
+	height: 750px;
+	display: none;
+}
+
+#indepth_carrusel_der{
+	text-align: center;
+	vertical-align: bottom;
+}
+
+.indepth_carrusel_thumps{
+	width: 68px;
+	height: auto;
+	background-size: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin: 3px;
+	font-size: 14px;
+	font-family: 'Roboto Condensed';
+	font-weight: 300;
+	text-align: center;
+	cursor: pointer;
+}
+
+.indepth_carrusel_thumps div{
+	width: 68px;
+	height: 68px;
+}
+
+#indepth_carrusel_thumps0 div{
+	background-image: url(../images/carrusel/thumbnails/thumb-amstrong-static.jpg);
+}
+
+#indepth_carrusel_thumps0.active div{
+	background-image: url(../images/carrusel/thumbnails/thumb-amstrong-hover.jpg);
+}
+
+#indepth_carrusel_thumps1 div{
+	background-image: url(../images/carrusel/thumbnails/thumb-robben-static.jpg);
+}
+
+#indepth_carrusel_thumps1.active div{
+	background-image: url(../images/carrusel/thumbnails/thumb-robben-hover.jpg);
+}
+
+#indepth_carrusel_thumps2 div{
+	background-image: url(../images/carrusel/thumbnails/thumb-tito-static.jpg);
+}
+
+#indepth_carrusel_thumps2.active div{
+	background-image: url(../images/carrusel/thumbnails/thumb-tito-hover.jpg);
+}
+
+#indepth_carrusel_thumps3 div{
+	background-image: url(../images/carrusel/thumbnails/thumb-jonas-static.jpg);
+}
+
+#indepth_carrusel_thumps3.active div{
+	background-image: url(../images/carrusel/thumbnails/thumb-jonas-hover.jpg);
+}
+
+#indepth_carrusel_thumps4 div{
+	background-image: url(../images/carrusel/thumbnails/thumb-sixtos-static.jpg);
+}
+
+#indepth_carrusel_thumps4.active div{
+	background-image: url(../images/carrusel/thumbnails/thumb-sixtos-hover.jpg);
+}
+
+#indepth_carrusel_thumps5 div{
+	background-image: url(../images/carrusel/thumbnails/thumb-cryuff-static.jpg);
+}
+
+#indepth_carrusel_thumps5.active div{
+	background-image: url(../images/carrusel/thumbnails/thumb-cryuff-hover.jpg);
+}
+
+#indepth_carrusel_thumps0 div:hover{
+	background-image: url(../images/carrusel/thumbnails/thumb-amstrong-hover.jpg);
+}
+
+
+#indepth_carrusel_thumps1 div:hover{
+	background-image: url(../images/carrusel/thumbnails/thumb-robben-hover.jpg);
+}
+
+#indepth_carrusel_thumps2 div:hover{
+	background-image: url(../images/carrusel/thumbnails/thumb-tito-hover.jpg);
+}
+
+
+#indepth_carrusel_thumps3 div:hover{
+	background-image: url(../images/carrusel/thumbnails/thumb-jonas-hover.jpg);
+}
+
+
+#indepth_carrusel_thumps4 div:hover{
+	background-image: url(../images/carrusel/thumbnails/thumb-sixtos-hover.jpg);
+}
+
+
+#indepth_carrusel_thumps5 div:hover{
+	background-image: url(../images/carrusel/thumbnails/thumb-cryuff-hover.jpg);
+}
+
+
+.indepth_carrusel_img{
+	width: 100%;
+	display: table;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.indepth_carrusel_thumps_cont{
+	width: 60%;
+	margin: auto;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%,0)
+}
+
+.indepth_carrusel_img img{
+	width: 80%;
+}
+
+.indpeth_carrusel_in{
+	display: table;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#indepth_carrusel_item0{
+	background-image: url(../images/carrusel/tour.jpg);
+}
+
+#indepth_carrusel_item1{
+	background-image: url(../images/carrusel/amsterdan.jpg);
+}
+
+#indepth_carrusel_item2{
+	background-image: url(../images/carrusel/barcelona.jpg);
+}
+
+#indepth_carrusel_item3{
+	background-image: url(../images/carrusel/newcastle.jpg);
+}
+
+#indepth_carrusel_item4{
+	background-image: url(../images/carrusel/azul.jpg);
+}
+
+#indepth_carrusel_item5{
+	background-image: url(../images/carrusel/noucamp.png);
+}
+
+
+#indepth_enemigos{
+	background-image: url(../images/atleta/atletismo.jpg);
+	padding: 60px 0;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#indepth_atleta{
+	background-image: url(../images/atleta/atleta.png);
+	background-position: right 30px bottom;
+	background-repeat: no-repeat;
+	width: 50%;
+	height: 700px;
+	position: absolute;
+	top: 0;
+	left:0;
+}
+
+
+
+#indepth_padece{
+	background-image: url(../images/columnas/backmicroscope.jpg);
+	background-size: cover;
+	padding: 60px 0;
+	background-attachment: fixed;
+}
+
+#indepth_padece .indepth_carrusel_img{
+	width: auto;
+	height: 280px;
+}
+
+#indepth_padece .indepth_carrusel_img img{
+	width: auto;
+	height: 100%;
+}
+
+#indepth_arte{
+	text-align: center;
+	background-image: url(../images/arte/weraback.jpg);
+	padding: 60px 0;
+	background-attachment: fixed;
+	background-size: cover;
+	
+}
+
+.tw_y{
+	    color: white;
+    text-decoration: none;
+    display: table;
+    float: right;
+    margin-top: -20px;
+}
+
+.ihh{
+	float: left;
+	height: 141px;
+	display: table;
+	width: 193px;
+	background-image: url(../images/arte/futsingenero.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.sep_w{
+	width: 100%;
+	height: 1px;
+	margin-bottom: 80px;
+}
+
+.hio{
+	float: right;
+	height: 141px;
+	display: table;
+	
+}
+
+.ihh img{
+	display: table-cell;
+	vertical-align: middle;
+	
+}
+
+.indepth_arte_img{
+	max-width: 600px;
+	width: 90%;
 }
 
 #indepth_footer{
@@ -515,9 +787,7 @@
 	width: 320px;
 	height: auto;
 	display: table-cell;
-	vertical-align: middle;
-	
-	
+	vertical-align: middle;	
 }
 
 .indepth_share_big_content{
@@ -614,6 +884,15 @@
 
 }
 
+.indepth_title_m{
+	color: white;
+	font-family: 'Roboto Condensed';
+	font-size: 55px;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
 
 /***** menu******/
 
@@ -641,168 +920,7 @@
 		margin: auto;
 	}
 
-	#ALI{
-		background-image: url(../images/2MOSAICO_ALI.jpg);
-	}
-	
-	#ALI:hover{
-		background-image: url(../images/2MOSAICO_ALI_OVER.jpg);
-	}
-	
-	#ALVES{
-		background-image: url(../images/2MOSAICO_ALVES.jpg);
-	}
-	
-	#ALVES:hover{
-		background-image: url(../images/2MOSAICO_ALVES_OVER.jpg);
-	}
-	
-	#BECKHAM{
-		background-image: url(../images/2MOSAICO_BECKHAM.jpg);
-	}
-	
-	#BECKHAM:hover{
-		background-image: url(../images/2MOSAICO_BECKHAM_OVER.jpg);
-	}
-	
-	#CANNAVARO{
-		background-image: url(../images/2MOSAICO_CANNAVARO.jpg);
-	}
-	
-	#CANNAVARO:hover{
-		background-image: url(../images/2MOSAICO_CANNAVARO_OVER.jpg);
-	}
-	
-	#CISSE{
-		background-image: url(../images/2MOSAICO_CISSE.jpg);
-	}
-	
-	#CISSE:hover{
-		background-image: url(../images/2MOSAICO_CISSE_OVER.jpg);
-	}
-	
-	#DEROSSI:hover{
-		background-image: url(../images/2MOSAICO_DEROSSI_OVER.jpg);
-	}
-	
-	#DEROSSI{
-		background-image: url(../images/2MOSAICO_DEROSSI.jpg);
-	}
-	
-	#HOWARD:hover{
-		background-image: url(../images/2MOSAICO_HOWARD_OVER.jpg);
-	}
-	
-	#HOWARD{
-		background-image: url(../images/2MOSAICO_HOWARD.jpg);
-	}
-	
-	#JONG{
-		background-image: url(../images/2MOSAICO_JONG.jpg);
-	}
-	
-	#JONG:hover{
-		background-image: url(../images/2MOSAICO_JONG_OVER.jpg);
-	}
-	
-	#LAYUN{
-		background-image: url(../images/2MOSAICO_LAYUN.jpg);
-	}
-	
-	#LAYUN:hover{
-		background-image: url(../images/2MOSAICO_LAYUN_OVER.jpg);
-	}
-	
-	#MARADONA{
-		background-image: url(../images/2MOSAICO_MARADONA.jpg);
-	}
-	
-	#MARADONA:hover{
-		background-image: url(../images/2MOSAICO_MARADONA_OVER.jpg);
-	}
-	
-	#MEIRELES{
-		background-image: url(../images/2MOSAICO_MEIRELES.jpg);
-	}
-	
-	#MEIRELES:hover{
-		background-image: url(../images/2MOSAICO_MEIRELES_OVER.jpg);
-	}
-	
-	#MESSI{
-		background-image: url(../images/2MOSAICO_MESSI.jpg);
-	}
-	
-	#MESSI:hover{
-		background-image: url(../images/2MOSAICO_MESSI_OVER.jpg);
-	}
-	
-	#MORGAN{
-		background-image: url(../images/2MOSAICO_MORGAN.jpg);
-	}
-	
-	#MORGAN:hover{
-		background-image: url(../images/2MOSAICO_MORGAN_OVER.jpg);
-	}
-	
-	#NEYMAR{
-		background-image: url(../images/2MOSAICO_NEYMAR.jpg);
-	}
-	
-	#NEYMAR:hover{
-		background-image: url(../images/2MOSAICO_NEYMAR_OVER.jpg);
-	}
-	
-	#RAMOS{
-		background-image: url(../images/2MOSAICO_RAMOS.jpg);
-	}
-	
-	#RAMOS:hover{
-		background-image: url(../images/2MOSAICO_RAMOS_OVER.jpg);
-	}
-	
-	#SYDNEY{
-		background-image: url(../images/2MOSAICO_SYDNEY.jpg);
-	}
-	
-	#SYDNEY:hover{
-		background-image: url(../images/2MOSAICO_SYDNEY_OVER.jpg);
-	}
-	
-	#TEVEZ{
-		background-image: url(../images/2MOSAICO_TEVEZ.jpg);
-	}
-	
-	#TEVEZ:hover{
-		background-image: url(../images/2MOSAICO_TEVEZ_OVER.jpg);
-	}
-	
-	#VUOSO{
-		background-image: url(../images/2MOSAICO_VUOSO.jpg);
-	}
-	
-	#VUOSO:hover{
-		background-image: url(../images/2MOSAICO_VUOSO_OVER.jpg);
-	}
-	
-	#ZLATAN{
-		background-image: url(../images/2MOSAICO_ZLATAN.jpg);
-	}
-	
-	#ZLATAN:hover{
-		background-image: url(../images/2MOSAICO_ZLATAN_OVER.jpg);
-	}
-	
-	#AGGER{
-		background-image: url(../images/2MOSAICO_AGGER.jpg);
-	}
-	
-	#AGGER:hover{
-		background-image: url(../images/2MOSAICO_AGGER_OVER.jpg);
-	}
-	
-	
-	/*** fin del mosaico  ******/
+
 }
 
 
@@ -816,10 +934,7 @@
 		width: 100%;
 	}
 	
-	#indepth_cover .indepth_parallax_back {
-	    background-position: center -100px;
-	}
-	
+
 
 	
 	.indepth_logo_cover img{
@@ -833,10 +948,6 @@
 	
 	.indepth_logo_img_cover img{
 		width: 100%;
-	}
-	
-	#indepth_cover .indepth_parallax_back {
-	    background-position: center -100px;
 	}
 	
 
@@ -1640,14 +1751,7 @@
 	#indepth_mosaico{
 		display: none;
 	}
-	
-	#indepth_cover .indepth_parallax_back{
-		background-image: url(../images/1-PORTADA_FONDO_MOVIL.png);
-		background-position: center top;
-		background-size: 100%;
-		
-	}
-	
+
 	.indepth_cover_movil{
 		width: 100%;
 		
@@ -1673,17 +1777,124 @@
 		
 	}
 	
+	#indepth_cover_cont{
+		bottom: auto;
+		top: 30px;
+	}
+	
+	#indepth_corona{
+		width: 96%;
+		margin: auto;
+		float: none;
+		padding-right: 0;
+		padding-top: 310px;
+		background-size: auto 250px;
+		background-position: center top 5px;
+	}
+	
+	.indepth_content{
+		width: 80%;
+	}
+	
+	.indepth_page_content .indepth_page_body{
+		width: 100%;
+	}
+	
+	#indepth_poligono2{
+		bottom: 600px;
+	}
+	
+	.indepth_carrusel_side{
+		width: 96%;
+		margin:  auto;
+		display: table;
+	}
+	
+	.indpeth_carrusel_in{
+		width: 100%;
+	}
+	
+	.indpeth_carrusel_in{
+		transform: none;
+		top: 0;
+		left: 0;
+	}
+	
+	.indepth_carrusel_flecha{
+		width: 20px;
+		display: none;
+	}
+	
+	.indepth_carrusel_side{
+		position: initial;
+	}
+	
+	.indepth_cont_car{
+		height: auto;
+		position:relative;
+		margin: 40px auto;
+		display: table;
+	}
+	
+	#indepth_carrusel_der{
+		display: none;
+	}
+	
+	.indepth_carrusel_side{
+		height: auto;
+	}
+	
+	.indepth_carrusel_cont{
+		display: none;
+	}
+	
+	.indpeth_carrusel_in{
+		position: initial;
+	}
+	
+	#indepth_carrusel_container{
+		background-size: auto 100%;
+	}
+	
+	.tw_y{
+		float: none;
+		margin: auto;
+	}
+	
+	
+	
 }
 
 
 
 
 @media screen and (max-width: 414px) {
-	.indepth_page_image{
-		height: auto;
-		padding-top: 440px;
-		background-size: 414px auto;
+	#indepth_cover_titulo {
+	    text-align: center;
+	    font-family: 'Roboto Condensed';
+	    font-weight: bold;
+	    font-size: 50px;
+	    line-height: 50px;
+	}
+	
+	.indepth_title_m{
+		width: 96%;
+	}
+	
+	.indepth_content_title{
+		font-size: 50px;
+		line-height: 50px;
+	}
+	
+	.hio{
+				margin-right: 10px;
+
+	}
+
+	.ihh{
 		
+				margin-left: 10px;;
+
 	}
 	
 
@@ -1697,7 +1908,27 @@
 }
 	
 @media screen and (max-width: 360px) {
+#indepth_cover_titulo{
+	font-size: 50px;
+	line-height: 45px;
+	width: 80%;
+	margin: auto;
+}
 
+.hio{
+	float: none;
+	margin: auto;
+}
+
+.ihh{
+	float: none;
+	
+	margin: auto;
+}
+
+.indepth_der{
+	float: none;
+}
 	
 }
 
