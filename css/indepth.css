@@ -1,0 +1,1715 @@
+@font-face {
+    font-family: "Bebas";
+    src: url(../css/BebasNeue.otf);
+}
+
+
+@font-face {
+    font-family: "Bebas L";
+    src: url(../css/BebasNeueLight.otf);
+}
+
+
+#recommended-wrapper{
+	display: none;
+}
+
+.indepth_share{
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 200;
+}
+
+.indepth_share_item{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.2);
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto 20px ;
+	margin-left: 7px;
+	cursor: pointer;
+}
+
+.indepth_share_item.facebook{
+	background-image: url(../images/boton_facebook.png);
+	
+}
+#indepth_share_card .indepth_share_item.facebook{
+	background-color: #3660A4;
+}
+
+.indepth_share_item.facebook:hover{
+	background-color: #3660A4;
+}
+
+#indepth_share_card .indepth_share_item.twitter{
+	background-color: #02B2F7;
+}
+
+.indepth_share_item.twitter{
+	background-image: url(../images/boton_twitter.png);
+	
+}
+
+.indepth_share_item.twitter:hover{
+	background-color: #02B2F7;
+}
+
+
+.indepth_share_item.whatsapp{
+	background-image: url(../images/boton_whatsapp.png);
+	display: none;
+}
+
+.indepth_share_item.whatsapp:hover{
+	background-color: #85D86D;
+}
+
+
+#com{
+	width: 90%;
+	margin: auto;
+}
+
+#indepth_button_ver{
+	width: 30px;
+	height: 30px;
+	background-image: url(../images/IMG_scroll.png);
+	margin: auto;
+	background-size: 100%;
+	cursor: pointer;
+}
+
+.indepth_button_cont{
+	width: 100%;
+	position: absolute;
+	bottom: 80px;
+}
+
+.indepth_pages{
+	width: 100%;
+	min-width: 960px;
+	position: relative;
+	overflow: hidden;
+	background-color: white;
+	font-family: 'Roboto';
+	font-size: 19px;
+	margin: auto;
+}
+
+.indepth_page{
+	width: 100%;
+	min-width: 960px;
+	position: relative;
+	overflow: hidden;
+	background-color: white;
+	margin: auto;
+}
+
+.indepth_page_content{
+	background-color:  white;
+	position: relative;
+	font-family: 'Roboto';
+	background-size: auto 100%;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.indepth_page_image{
+	height: 900px;
+}
+
+#com{
+	background: white;
+}
+
+.indepth_page_body{
+	bottom: 0px;
+	left: 0px;
+	margin: 0 auto;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 100%;
+	max-width: 900px;
+	height: 100%;
+	z-index: 2;
+}
+ 
+#indepth_cover .indepth_parallax_back{
+	background-image: url(../images/portada/lorenzo.png);
+	background-size: 1920px auto;
+	background-position: center top;
+	text-align: center;
+	width: 100%;
+}
+
+#indepth_cover{
+	position: relative;
+	color: white;
+	background-image: url(../images/portada/lorenzoback.jpg);
+	background-size: 1920px auto;
+	background-position: center bottom;
+	text-align: center;
+	width: 100%;
+	background-attachment: fixed;
+}
+
+#indepth_corona{
+	width: 50%;
+	padding-right: 50%;
+	height: 100%;
+	background-image: url(../images/portada/brujaslogo.png);
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+.indepth_der{
+	float: right;
+}
+
+#indepth_cover_cont{
+	width: 100%;
+	display: table;
+	position: absolute;
+	margin: auto;
+	bottom: 50px;
+	padding-bottom: 50px;
+}
+
+
+#indepth_cover_titulo{
+	text-align: center;
+	font-family: 'Bebas';
+	font-weight: bold;
+	font-size: 118px;
+	line-height: 100px;
+}
+
+#indepth_cover_credits{
+	font-size: 20px;
+	font-weight: 300;
+}
+
+#indepth_intro{
+	background-image: url(../images/portada/backlorenzo.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	color: white;
+	padding: 60px 0;
+}
+
+#indepth_intro .indepth_page_body{
+}
+
+#indepth_intro .indepth_content{
+	position:relative;
+}
+
+#mapa_cont{
+	max-width: 360px;
+	width: 96%;
+	margin: 40px auto;
+	text-align: center;
+}
+
+.indepth_text_into{
+	font-weight: 500;
+}
+
+#imagen_mapa{
+	width: 260px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+#indepth_poligonos{
+	background-color: #0d1d24;
+	background-image: url(../images/poligonos/poligonoback.png);
+	background-attachment: fixed;
+	background-repeat: repeat;
+	background-size: cover;
+}
+
+#indepth_poligonos{
+	padding-top: 350px;
+	margin-bottom: -20px;
+}
+
+#indepth_poligono1{
+	background-image: url(../images/poligonos/poliizquierdo.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	width: 50%;
+	height: 1120px;
+	position: absolute;
+	top: 0;
+	left:0;
+}
+
+#indepth_poligono1 .indepth_poligono_in{
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/poligonos/atletaazul.png);
+	background-repeat: no-repeat;
+	background-position: right 80px bottom;
+}
+
+#indepth_poligono2{
+	background-image: url(../images/poligonos/poliderecho.png);
+	
+	background-position: left 140px top;
+	background-repeat: no-repeat;
+	width: 50%;
+	height: 1120px;
+	position: absolute;
+	bottom: 0;
+	right:0;
+}
+
+#indepth_poligono2 .indepth_poligono_in{
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/poligonos/crono.png);
+	background-repeat: no-repeat;
+	background-position: left 20px center;
+}
+
+#indepth_poligonos .indepth_page_body{
+	margin-bottom: 190px;
+	overflow: visible;
+}
+
+#indepth_texto_aul{
+	width: 100%;
+	background-color: #358a8d;
+	color: black;
+	font-size: 24px;
+	font-weight: 300;
+	text-align: center;
+	position: relative;
+	padding: 80px 0;
+}
+
+#indepth_texto_aul div{
+	width: 96%;
+	max-width: 700px;
+	margin: auto;
+	display: table;
+}
+
+#indepth_carrusel_container{
+	background-color: black;
+}
+
+.indepth_carrusel_cont{
+	height: 100%;
+}
+
+.indepth_carrusel_item{
+	height: 100%;
+	float: left;
+}
+
+.indepth_page_content .indepth_page_body{
+	position: relative;
+	max-width: 900px;
+	color: white;
+	display: table;
+}
+
+.indepth_content_title div{
+	max-width: 300px;
+}
+
+.indepth_content_title{
+	font-size: 70px;
+	font-weight: 300;
+	font-family: 'Bebas L';
+	line-height: 65px;
+	margin-bottom: 15px;
+}
+
+.indepth_content{
+	width: 50%;
+	font-size: 20px;
+	font-weight: 300;
+	font-family: 'Roboto Condensed';
+}
+
+.indepth_left{
+	float: left;
+}
+
+.indepth_tatuajes_text{
+	font-size: 20px;
+	font-family: 'Roboto condensed';
+	position: absolute;
+	font-weight: 300;
+}
+
+.indepth_tatuaje_item{
+	display: inline-block;
+	position: relative;
+}
+
+.indepth_img_over{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.indepth_img_over:hover{
+	opacity: 1;
+}
+
+.indepth_tatuajes_imgs{
+	position: absolute;
+	cursor: pointer;
+	text-align: center
+}
+
+.indepth_page_content .indepth_container{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+
+.indepth_page_content .indepth_text{
+	color: #535252; /* color de la fuente*/
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 23px;
+	display: table;
+	max-width: 680px;
+	margin: auto;
+	color: black;
+	letter-spacing: .8px;
+	text-align: justify;
+	color: white;
+	font-family: 'Roboto Condensed';
+	font-weight: 300;
+}
+
+.indepth_page_content .indepth_title{
+	font-size: 30px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #4eb1f9;
+	font-family: 'Roboto Condensed';
+}
+
+.indepth_playera_costado{
+	width: 400px;
+	margin: auto;
+}
+
+.indepth_descargar_boton{
+	width: 154px;
+	height: 37px;
+	margin: 30px auto;
+	background-image: url(../images/BTN-Descargar.png);
+	cursor: pointer;
+}
+
+.indepth_descargar_boton:hover{
+	background-image: url(../images/BTN-DescargarOVER.png);
+}
+
+#indepth_footer{
+	background-color: #F8F8F8;
+	border-top: 1px solid #8A8A8A;
+	border-bottom: 1px solid #8A8A8A;
+	padding: 15px 0px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#indepth_footer .indepth_text{
+	font-size:17px;
+	color: #313232;
+	text-align:center;
+}
+
+#indepth_footer .indepth_page_body{
+	position: relative;
+}
+
+#indepth_footer .Copyright{
+		float: left;
+		text-align: center;
+		width: 100%;
+}
+
+.indepth_parallax_back {
+	height: 100%;
+	background-size: cover;
+	top: 0px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	display: table;
+	width: 100%;
+}
+
+.indepth_datos{
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	margin-bottom: 10px;
+	font-family: 'Roboto'
+}
+
+.indepth_datos span{
+	font-weight: 300;
+}
+
+.indepth_share_logos{
+	max-width: 880px;
+	margin: auto;
+	position: relative;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.indepth_share_logos_item{
+	height: 135px;
+	cursor: pointer;
+	display: inline-block;
+	margin: 10px 10px;
+}
+
+.indepth_share_logos_item img{
+	opacity: .7;
+	cursor: pointer;
+}
+
+.indepth_share_logos_item img:hover{
+	opacity: 1;
+	transform: scale(.9);
+}
+
+
+.indepth_share_logos_item img{
+	height: 100%;
+}
+
+.indepth_text.cual{
+	color: #313232;
+	font-size: 25px;
+	max-width: 420px;
+	text-align: center;
+	font-weight: 300;
+}
+/****DINAMICO****/
+
+
+#indepth_share_card{
+	width: 320px;
+	height: auto;
+	display: table-cell;
+	vertical-align: middle;
+	
+	
+}
+
+.indepth_share_big_content{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	height: 100vh;
+	top:0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	background: rgba(0, 0, 0, 0.8);
+	display: table;
+	z-index: 200;
+	display: none;
+	-webkit-transform:translateZ(1px);
+      -moz-transform:translateZ(1px);
+      -o-transform:translateZ(1px);
+      transform:translateZ(1px);
+      cursor: pointer;
+	
+}
+
+.indepth_share_card_cont{
+	background: white;
+	width: 320px;
+	margin: auto;
+	display: table;
+	position: relative;
+	cursor: auto;
+}
+
+#indepth_card_close{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: black;
+	transform: translate(50%,-50%);
+	-webkit-transform: translate(50%,-50%);
+	-moz-transform: translate(50%,-50%);
+	-ms-transform: translate(50%,-50%);
+	-o-transform: translate(50%,-50%);
+	border-radius: 50%;
+	background-image: url("../images/equis.png");
+	background-size: 50% auto;
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+#indepth_share_image{
+	display: table;
+	width: 100%;
+}
+
+#indepth_share_image img {
+	width: 100%;
+}
+
+.indepth_share_item{
+	z-index: 300;
+}
+
+.indepth_share_info_cont{
+	width: 280px;
+	margin:  25px auto;
+}
+
+#indepth_share_title{
+	font-size: 18px;
+	margin-bottom: 8px;
+	font-weight: 600;
+}
+
+.indepth_share_text{
+	font-size: 16px;
+	font-family: 'Roboto Condensed';
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+
+.indepth_share_compartir{
+	font-size: 12px;
+	color: #b2b2b2;
+	text-transform: uppercase;
+}
+
+.indepth_share_card_boton{
+	  margin: 10px auto;
+	  display: table;
+	  margin-top: 5px;
+
+}
+
+
+/***** menu******/
+
+
+/* mobile adecuations */
+
+@media screen and (min-width: 860px) {
+	
+	/***** mosaico ******/
+	.indepth_tatuajes_cuadros, .indepth_cover_movil, .indepth_i{
+		display: none;
+	}
+	
+	.indepth_tatuajes_cuadros{
+		background: rgba(0, 0, 0, 0.6);
+		position: fixed;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		text-align: center;
+	}
+	
+	.indepth_i{
+		vertical-align: middle;
+		margin: auto;
+	}
+
+	#ALI{
+		background-image: url(../images/2MOSAICO_ALI.jpg);
+	}
+	
+	#ALI:hover{
+		background-image: url(../images/2MOSAICO_ALI_OVER.jpg);
+	}
+	
+	#ALVES{
+		background-image: url(../images/2MOSAICO_ALVES.jpg);
+	}
+	
+	#ALVES:hover{
+		background-image: url(../images/2MOSAICO_ALVES_OVER.jpg);
+	}
+	
+	#BECKHAM{
+		background-image: url(../images/2MOSAICO_BECKHAM.jpg);
+	}
+	
+	#BECKHAM:hover{
+		background-image: url(../images/2MOSAICO_BECKHAM_OVER.jpg);
+	}
+	
+	#CANNAVARO{
+		background-image: url(../images/2MOSAICO_CANNAVARO.jpg);
+	}
+	
+	#CANNAVARO:hover{
+		background-image: url(../images/2MOSAICO_CANNAVARO_OVER.jpg);
+	}
+	
+	#CISSE{
+		background-image: url(../images/2MOSAICO_CISSE.jpg);
+	}
+	
+	#CISSE:hover{
+		background-image: url(../images/2MOSAICO_CISSE_OVER.jpg);
+	}
+	
+	#DEROSSI:hover{
+		background-image: url(../images/2MOSAICO_DEROSSI_OVER.jpg);
+	}
+	
+	#DEROSSI{
+		background-image: url(../images/2MOSAICO_DEROSSI.jpg);
+	}
+	
+	#HOWARD:hover{
+		background-image: url(../images/2MOSAICO_HOWARD_OVER.jpg);
+	}
+	
+	#HOWARD{
+		background-image: url(../images/2MOSAICO_HOWARD.jpg);
+	}
+	
+	#JONG{
+		background-image: url(../images/2MOSAICO_JONG.jpg);
+	}
+	
+	#JONG:hover{
+		background-image: url(../images/2MOSAICO_JONG_OVER.jpg);
+	}
+	
+	#LAYUN{
+		background-image: url(../images/2MOSAICO_LAYUN.jpg);
+	}
+	
+	#LAYUN:hover{
+		background-image: url(../images/2MOSAICO_LAYUN_OVER.jpg);
+	}
+	
+	#MARADONA{
+		background-image: url(../images/2MOSAICO_MARADONA.jpg);
+	}
+	
+	#MARADONA:hover{
+		background-image: url(../images/2MOSAICO_MARADONA_OVER.jpg);
+	}
+	
+	#MEIRELES{
+		background-image: url(../images/2MOSAICO_MEIRELES.jpg);
+	}
+	
+	#MEIRELES:hover{
+		background-image: url(../images/2MOSAICO_MEIRELES_OVER.jpg);
+	}
+	
+	#MESSI{
+		background-image: url(../images/2MOSAICO_MESSI.jpg);
+	}
+	
+	#MESSI:hover{
+		background-image: url(../images/2MOSAICO_MESSI_OVER.jpg);
+	}
+	
+	#MORGAN{
+		background-image: url(../images/2MOSAICO_MORGAN.jpg);
+	}
+	
+	#MORGAN:hover{
+		background-image: url(../images/2MOSAICO_MORGAN_OVER.jpg);
+	}
+	
+	#NEYMAR{
+		background-image: url(../images/2MOSAICO_NEYMAR.jpg);
+	}
+	
+	#NEYMAR:hover{
+		background-image: url(../images/2MOSAICO_NEYMAR_OVER.jpg);
+	}
+	
+	#RAMOS{
+		background-image: url(../images/2MOSAICO_RAMOS.jpg);
+	}
+	
+	#RAMOS:hover{
+		background-image: url(../images/2MOSAICO_RAMOS_OVER.jpg);
+	}
+	
+	#SYDNEY{
+		background-image: url(../images/2MOSAICO_SYDNEY.jpg);
+	}
+	
+	#SYDNEY:hover{
+		background-image: url(../images/2MOSAICO_SYDNEY_OVER.jpg);
+	}
+	
+	#TEVEZ{
+		background-image: url(../images/2MOSAICO_TEVEZ.jpg);
+	}
+	
+	#TEVEZ:hover{
+		background-image: url(../images/2MOSAICO_TEVEZ_OVER.jpg);
+	}
+	
+	#VUOSO{
+		background-image: url(../images/2MOSAICO_VUOSO.jpg);
+	}
+	
+	#VUOSO:hover{
+		background-image: url(../images/2MOSAICO_VUOSO_OVER.jpg);
+	}
+	
+	#ZLATAN{
+		background-image: url(../images/2MOSAICO_ZLATAN.jpg);
+	}
+	
+	#ZLATAN:hover{
+		background-image: url(../images/2MOSAICO_ZLATAN_OVER.jpg);
+	}
+	
+	#AGGER{
+		background-image: url(../images/2MOSAICO_AGGER.jpg);
+	}
+	
+	#AGGER:hover{
+		background-image: url(../images/2MOSAICO_AGGER_OVER.jpg);
+	}
+	
+	
+	/*** fin del mosaico  ******/
+}
+
+
+@media screen and (max-height: 890px) {
+	.indepth_logo_img_cover{
+		margin: auto;
+		
+	}
+	
+	.indepth_logo_img_cover img{
+		width: 100%;
+	}
+	
+	#indepth_cover .indepth_parallax_back {
+	    background-position: center -100px;
+	}
+	
+
+	
+	.indepth_logo_cover img{
+		width: 100%;
+	}
+	
+}
+
+@media screen and (max-height: 810px) {
+
+	
+	.indepth_logo_img_cover img{
+		width: 100%;
+	}
+	
+	#indepth_cover .indepth_parallax_back {
+	    background-position: center -100px;
+	}
+	
+
+	
+	.indepth_logo_cover img{
+		width: 100%;
+	}
+	
+}
+
+@media screen and (max-height: 750px) {
+	
+}
+
+@media screen and (max-height: 720px) {
+
+	
+		
+}
+
+@media screen and (max-height: 720px) {
+
+
+	
+		
+}
+
+@media screen and (max-height: 640px) {
+
+	
+	
+	
+		
+}
+
+@media screen and (max-height: 580px) {
+
+		
+}
+
+@media screen and (max-height: 480px) {
+
+		
+}
+
+@media screen and (max-height: 420px) {
+
+		
+}
+
+@media screen and (max-height: 350px) {
+
+	
+		
+}
+
+/*** Movil ****/
+@media screen and (max-width:1100px) {
+
+	
+	
+	
+
+}
+
+@media screen and (max-height: 730px) {
+
+
+	
+	
+}
+
+
+
+@media screen and (max-width: 960px) {
+	body{
+		width: 100%;
+		min-width: 0px;
+	}
+	
+	.indepth_pages, .indepth_page{
+		min-width: 0;
+	}
+
+
+	.indepth_mosaico_item{
+		width: 150px;
+		height: 150px;
+		background-size: 100%;
+	}
+}
+
+@media screen and (max-height: 768px) {
+
+	.indepth_logo_cover{
+		width: 500px;
+	}
+	
+	.indepth_logo_img_cover{
+		margin-top: -20px;
+	}
+	
+	.indepth_imgs{
+		padding-bottom: 20px;
+	}
+	
+	#ALI{
+		background-image: url(../images/2MOSAICO_ALI_OVER.jpg);
+	}
+	
+	#ALVES{
+		background-image: url(../images/2MOSAICO_ALVES_OVER.jpg);
+	}
+	
+	#BECKHAM{
+		background-image: url(../images/2MOSAICO_BECKHAM_OVER.jpg);
+	}
+
+	
+	#CANNAVARO{
+		background-image: url(../images/2MOSAICO_CANNAVARO_OVER.jpg);
+	}
+
+	#CISSE{
+		background-image: url(../images/2MOSAICO_CISSE_OVER.jpg);
+	}
+	
+	#DEROSSI{
+		background-image: url(../images/2MOSAICO_DEROSSI_OVER.jpg);
+	}
+
+	
+	#HOWARD{
+		background-image: url(../images/2MOSAICO_HOWARD_OVER.jpg);
+	}
+	
+
+	#JONG{
+		background-image: url(../images/2MOSAICO_JONG_OVER.jpg);
+	}
+	
+
+	#LAYUN{
+		background-image: url(../images/2MOSAICO_LAYUN_OVER.jpg);
+	}
+	
+
+	#MARADONA{
+		background-image: url(../images/2MOSAICO_MARADONA_OVER.jpg);
+	}
+
+	
+	#MEIRELES{
+		background-image: url(../images/2MOSAICO_MEIRELES_OVER.jpg);
+	}
+
+	
+	#MESSI{
+		background-image: url(../images/2MOSAICO_MESSI_OVER.jpg);
+	}
+	
+	#MORGAN{
+		background-image: url(../images/2MOSAICO_MORGAN_OVER.jpg);
+	}
+	
+	
+	#NEYMAR{
+		background-image: url(../images/2MOSAICO_NEYMAR_OVER.jpg);
+	}
+
+	#RAMOS{
+		background-image: url(../images/2MOSAICO_RAMOS_OVER.jpg);
+	}
+
+	#SYDNEY{
+		background-image: url(../images/2MOSAICO_SYDNEY_OVER.jpg);
+	}
+	
+	#TEVEZ{
+		background-image: url(../images/2MOSAICO_TEVEZ_OVER.jpg);
+	}
+
+	#VUOSO{
+		background-image: url(../images/2MOSAICO_VUOSO_OVER.jpg);
+	}
+
+	#ZLATAN{
+		background-image: url(../images/2MOSAICO_ZLATAN_OVER.jpg);
+	}
+
+	#AGGER{
+		background-image: url(../images/2MOSAICO_AGGER_OVER.jpg);
+	}
+}
+
+@media screen and (min-width: 861px) {
+	/****** inicio estilos textos *****/
+
+#indepth_BECKHAM .indepth_tatuajes_text{
+	width: 340px;
+	top: 310px;
+	right: 30px;
+}
+
+#indepth_BECKHAM .indepth_tatuajes_imgs{
+	width: 560px;
+	right: 10px;
+	bottom: 80px;
+}
+
+#indepth_ALI .indepth_tatuajes_text{
+	width: 430px;
+	top: 370px;
+	left: 50px;
+}
+
+#indepth_ALI .indepth_tatuajes_imgs{
+	width: 430px;
+	left: 20px;
+	bottom: 135px;
+}
+
+#indepth_CISSE .indepth_tatuajes_text{
+	width: 500px;
+	top: 370px;
+	right: 30px;
+}
+
+#indepth_CISSE .indepth_tatuajes_imgs{
+	width: 600px;
+	right: 20px;
+	bottom: 60px;
+}
+
+#indepth_CANNA .indepth_tatuajes_text{
+	width: 500px;
+	top: 580px;
+	left: 20px;
+	color: white;
+}
+
+#indepth_CANNA .indepth_tatuajes_imgs{
+	width: 440px;
+	left: 20px;
+	bottom: 10px;
+}
+
+#indepth_MARADO .indepth_tatuajes_text{
+	width: 500px;
+	top: 440px;
+	right: 30px;
+}
+
+#indepth_MARADO .indepth_tatuajes_imgs{
+	width: 520px;
+	right: 40px;
+	bottom: 40px;
+}
+
+#indepth_ZLATAN .indepth_tatuajes_text{
+	width: 650px;
+	top: 430px;
+	right: 10px;
+	color: white;
+}
+
+#indepth_ZLATAN .indepth_tatuajes_imgs{
+	width: 650px;
+	right: 20px;
+	bottom: 0px;
+}
+
+#indepth_MEIRELES .indepth_tatuajes_text{
+	width: 420px;
+	top: 330px;
+	right: 60px;
+}
+
+#indepth_MEIRELES .indepth_tatuajes_imgs{
+	width: 500px;
+	right: 30px;
+	bottom: 20px;
+}
+
+#indepth_MESSI .indepth_tatuajes_text{
+	width: 480px;
+	top: 290px;
+	right: 30px;
+	color: white;
+}
+
+#indepth_MESSI .indepth_tatuajes_imgs{
+	width: 500px;
+	right: 0px;
+	bottom: 10px;
+}
+
+#indepth_MORGAN .indepth_tatuajes_text{
+	width: 460px;
+	top: 410px;
+	left: 50px;
+}
+
+#indepth_MORGAN .indepth_tatuajes_imgs{
+	width: 260px;
+	LEFT: 30px;
+	bottom: 10px;
+}
+
+#indepth_NEY .indepth_tatuajes_text{
+	width: 460px;
+	top: 340px;
+	left: 50px;
+}
+
+#indepth_NEY .indepth_tatuajes_imgs{
+	width: 610px;
+	left: 0px;
+	bottom: 100px;
+}
+
+#indepth_VUOSO .indepth_tatuajes_text{
+	width: 450px;
+	top: 400px;
+	right: 60px;
+	color: white;
+}
+
+#indepth_VUOSO .indepth_tatuajes_imgs{
+	width: 470px;
+	right: 50px;
+	bottom: 100px;
+}
+
+#indepth_RAMOS .indepth_tatuajes_text{
+	width: 500px;
+	top: 390px;
+	LEFT: 60px;
+}
+
+#indepth_RAMOS .indepth_tatuajes_imgs{
+	width: 580px;
+	left: 10px;
+	bottom: 20px;
+}
+
+#indepth_JONG .indepth_tatuajes_text{
+	width: 330px;
+	top: 430px;
+	left: 70px;
+}
+
+#indepth_JONG .indepth_tatuajes_imgs{
+	width: 520px;
+	left: 0px;
+	bottom: 60px;
+}
+
+#indepth_AGGER .indepth_tatuajes_text{
+	width: 460px;
+	top: 330px;
+	LEFT: 30px;
+}
+
+#indepth_AGGER .indepth_tatuajes_imgs{
+	width: 510px;
+	LEFT: 0px;
+	bottom: 50px;
+}
+
+#indepth_DEROSSI .indepth_tatuajes_text{
+	width: 330px;
+	top: 370px;
+	right: 60px;
+}
+
+#indepth_DEROSSI .indepth_tatuajes_imgs{
+	width: 500px;
+	right: 30px;
+	bottom: 20px;
+}
+
+#indepth_TEVEZ .indepth_tatuajes_text{
+	width: 600px;
+	top: 560px;
+	left: 40px;
+	color: white;
+}
+
+#indepth_TEVEZ .indepth_tatuajes_imgs{
+	width: 610px;
+	left: 30px;
+	bottom: 10px;
+}
+
+#indepth_LAYUN .indepth_tatuajes_text{
+	width: 480px;
+	top: 400px;
+	LEFT: 60px;
+	color: white;
+}
+
+#indepth_LAYUN .indepth_tatuajes_imgs{
+	width: 500px;
+	left: 30px;
+	bottom: 100px;
+}
+
+#indepth_SYDENY .indepth_tatuajes_text{
+	width: 460px;
+	top: 350px;
+	left: 30px;
+	color: white;
+}
+
+#indepth_SYDENY .indepth_tatuajes_imgs{
+	width: 500px;
+	LEFT: 30px;
+	bottom: 50px;
+}
+
+#indepth_ALVES .indepth_tatuajes_text{
+	width: 420px;
+	top: 400Px;
+	right: 40px;
+}
+
+#indepth_ALVES .indepth_tatuajes_imgs{
+	width: 500px;
+	right: 30px;
+	bottom: 20px;
+}
+
+#indepth_HOWARD .indepth_tatuajes_text{
+	width: 460px;
+	top: 420px;
+	LEFT: 60px;
+}
+
+#indepth_HOWARD .indepth_tatuajes_imgs{
+	width: 500px;
+	LEFT: 30px;
+	bottom: 30px;
+}
+
+
+
+/******* fin estilos **********/
+}
+
+@media screen and (max-width: 860px) {
+
+	.indepth_mosaico_item{
+		width: 120px;
+		height: 120px;
+		background-size: 100%;
+	}
+	
+	.indepth_tatuajes_text{
+		font-weight: 300;
+	}
+	
+	
+	/******** mopsaico  **********/
+	
+	#ALI{
+		background-image: url(../images/2MOSAICO_ALI_OVER.jpg);
+	}
+	
+	#ALVES{
+		background-image: url(../images/2MOSAICO_ALVES_OVER.jpg);
+	}
+	
+	#BECKHAM{
+		background-image: url(../images/2MOSAICO_BECKHAM_OVER.jpg);
+	}
+
+	
+	#CANNAVARO{
+		background-image: url(../images/2MOSAICO_CANNAVARO_OVER.jpg);
+	}
+
+	#CISSE{
+		background-image: url(../images/2MOSAICO_CISSE_OVER.jpg);
+	}
+	
+	#DEROSSI{
+		background-image: url(../images/2MOSAICO_DEROSSI_OVER.jpg);
+	}
+
+	
+	#HOWARD{
+		background-image: url(../images/2MOSAICO_HOWARD_OVER.jpg);
+	}
+	
+
+	#JONG{
+		background-image: url(../images/2MOSAICO_JONG_OVER.jpg);
+	}
+	
+
+	#LAYUN{
+		background-image: url(../images/2MOSAICO_LAYUN_OVER.jpg);
+	}
+	
+
+	#MARADONA{
+		background-image: url(../images/2MOSAICO_MARADONA_OVER.jpg);
+	}
+
+	
+	#MEIRELES{
+		background-image: url(../images/2MOSAICO_MEIRELES_OVER.jpg);
+	}
+
+	
+	#MESSI{
+		background-image: url(../images/2MOSAICO_MESSI_OVER.jpg);
+	}
+	
+	#MORGAN{
+		background-image: url(../images/2MOSAICO_MORGAN_OVER.jpg);
+	}
+	
+	
+	#NEYMAR{
+		background-image: url(../images/2MOSAICO_NEYMAR_OVER.jpg);
+	}
+
+	#RAMOS{
+		background-image: url(../images/2MOSAICO_RAMOS_OVER.jpg);
+	}
+
+	#SYDNEY{
+		background-image: url(../images/2MOSAICO_SYDNEY_OVER.jpg);
+	}
+	
+	#TEVEZ{
+		background-image: url(../images/2MOSAICO_TEVEZ_OVER.jpg);
+	}
+
+	#VUOSO{
+		background-image: url(../images/2MOSAICO_VUOSO_OVER.jpg);
+	}
+
+	#ZLATAN{
+		background-image: url(../images/2MOSAICO_ZLATAN_OVER.jpg);
+	}
+
+	#AGGER{
+		background-image: url(../images/2MOSAICO_AGGER_OVER.jpg);
+	}
+	
+	
+	/*** fin del mosaico  ******/
+	
+	
+	/******* fondos movil ******/
+	.indepth_page_body{
+		background-size: 860px auto;
+	}
+	
+	.indepth_page_image{
+		height: auto;
+		padding-top: 960px;
+		background-size: 860px auto;
+		
+	}
+	
+	.indepth_page_content .indepth_page_body{
+		padding-bottom: 40px;
+	}
+	
+	.indepth_tatuajes_imgs{
+		display: none;
+	}
+	
+	.indepth_tatuajes_text{
+		position: relative;
+		width: 90%;
+		margin: 20px auto;
+	}
+	
+	.m_white .indepth_tatuajes_text{
+		color: white;
+	}
+	
+	.indepth_tatuajes_cuadros{
+		width: 90%;
+		margin: 10px auto;
+		max-width: 640px;
+		
+	}
+	
+	.indepth_i{
+		width: 100%;
+		margin: 10px auto;
+	}
+	
+	.indepth_i img{
+		width: 100%;
+	}
+
+	
+	#indepth_BECKHAM{
+		background-image: url(../images/BECK_FONDO_MOVIL.jpg);
+		
+	}
+	
+	#indepth_BECKHAM .indepth_page_body{
+		background-image: url(../images/BECK_PIXEL.jpg);
+		
+	}
+	
+	#indepth_ALI{
+		background-image: url(../images/ALI_FONDO_MOVIL.jpg)
+	}
+	
+	#indepth_ALI .indepth_page_body{
+		background-image: url(../images/ALI_PIXEL.jpg)
+	}
+	
+	#indepth_CISSE{
+		background-image: url(../images/CISSE_FONDO_MOVIL.jpg)
+	}
+	
+	#indepth_CISSE .indepth_page_body{
+		background-image: url(../images/CISSE_PIXEL.jpg)
+	}
+	
+	#indepth_CANNA{
+		background-image: url(../images/CANNA_FONDO_MOVIL.jpg)
+	}
+	
+	#indepth_CANNA .indepth_page_body{
+		background-image: url(../images/CANNA_PIXEL.jpg)
+	}
+	
+	#indepth_MARADO{
+		background-image: url(../images/MARADO_FONDO_MOVIL.jpg)
+	}
+	
+	#indepth_MARADO .indepth_page_body{
+		background-image: url(../images/MARADO_PIXEL.jpg)
+	}
+	
+	#indepth_ZLATAN{
+		background-image: url(../images/ZLATAN_FONDO_MOVIL.jpg)
+	}
+
+	#indepth_ZLATAN .indepth_page_body{
+		background-image: url(../images/ZLATAN_PIXEL.jpg)
+	}
+	
+	#indepth_MEIRELES{
+		background-image: url(../images/MEIRELES_FONDO_MOVIL.jpg)
+	}
+	
+	#indepth_MEIRELES .indepth_page_body{
+		background-image: url(../images/MEIRELES_PIXEL.jpg)
+	}
+	
+	#indepth_MESSI{
+		background-image: url(../images/MESSI_FONDO_MOVIL.jpg)
+	}
+	
+	#indepth_MESSI .indepth_page_body{
+		background-image: url(../images/MESSI_PIXEL.jpg)
+	}
+	
+	#indepth_MORGAN{
+		background-image: url(../images/MORGAN_FONDO_MOVIL.jpg)
+	}
+	
+	#indepth_MORGAN .indepth_page_body{
+		background-image: url(../images/MORGAN_PIXEL.jpg)
+	}
+	
+	#indepth_NEY{
+		background-image: url(../images/NEY_FONDO_MOVIL.jpg)
+	}
+	
+	#indepth_NEY .indepth_page_body{
+		background-image: url(../images/NEY_PIXEL.jpg)
+	}
+	
+	#indepth_VUOSO{
+		background-image: url(../images/VUOSO_FONDO_MOVIL.jpg)
+	}
+	
+	#indepth_VUOSO .indepth_page_body{
+		background-image: url(../images/VUOSO_PIXEL.jpg)
+	}
+	
+	#indepth_RAMOS{
+		background-image: url(../images/RAMOS_FONDO_MOVIL.jpg)
+	}
+	
+	#indepth_RAMOS .indepth_page_body{
+		background-image: url(../images/RAMOS_PIXEL.jpg)
+	}
+	
+	#indepth_JONG{
+		background-image: url(../images/JONG_FONDO_MOVIL.jpg)
+	}
+	
+	#indepth_JONG .indepth_page_body{
+		background-image: url(../images/JONG_PIXEL.jpg)
+	}
+	
+	#indepth_AGGER{
+		background-image: url(../images/AGGER_FONDO_MOVIL.jpg)
+	}
+	
+	#indepth_AGGER .indepth_page_body{
+		background-image: url(../images/AGGER_PIXEL.jpg)
+	}
+	
+	#indepth_DEROSSI{
+		background-image: url(../images/DEROSSI_FONDO_MOVIL.jpg)
+	}
+	
+	#indepth_DEROSSI .indepth_page_body{
+		background-image: url(../images/DEROSSI_PIXEL.jpg)
+	}
+	
+	#indepth_TEVEZ{
+		background-image: url(../images/TEVEZ_FONDO_MOVIL.jpg)
+	}
+	
+	#indepth_TEVEZ .indepth_page_body{
+		background-image: url(../images/TEVEZ_PIXEL.jpg)
+	}
+	
+	#indepth_LAYUN{
+		background-image: url(../images/LAYUN_FONDO_MOVIL.jpg)
+	}
+	
+	#indepth_LAYUN .indepth_page_body{
+		background-image: url(../images/LAYUN_PIXEL.jpg)
+	}
+	
+	#indepth_SYDENY{
+		background-image: url(../images/SYDENY_FONDO_MOVIL.jpg);
+	}
+	
+	#indepth_SYDENY .indepth_page_body{
+		background-image: url(../images/SYDENY_PIXEL.jpg)
+	}
+	
+	#indepth_ALVES{
+		background-image: url(../images/ALVES_FONDO_MOVIL.jpg)
+	}
+	
+	#indepth_ALVES .indepth_page_body{
+		background-image: url(../images/ALVES_PIXEL.jpg)
+	}
+	
+	#indepth_HOWARD{
+		background-image: url(../images/HOWARD_FONDO_MOVIL.jpg)
+	}
+	
+	#indepth_HOWARD .indepth_page_body{
+		background-image: url(../images/HOWARD_PIXEL.jpg)
+	}
+	
+
+
+}
+
+@media screen and (max-width: 700px) {
+
+	.indepth_playera{
+		width: 250px;
+	}
+	
+	.indepth_playera_side{
+		width: 580px;
+		margin: auto;
+		margin-top: 30px;
+	}
+	
+	.indepth_playera_side_item{
+		width: 200px;
+		top: 35px;
+	}
+	
+	.indepth_playera_side_item.izq{
+		left: 0%;
+	}
+	
+	.indepth_playera_side_item.der{
+		right: 0%;
+	}
+	
+
+}
+
+@media screen and (max-width: 600px) {
+	
+	#indepth_mosaico{
+		display: none;
+	}
+	
+	#indepth_cover .indepth_parallax_back{
+		background-image: url(../images/1-PORTADA_FONDO_MOVIL.png);
+		background-position: center top;
+		background-size: 100%;
+		
+	}
+	
+	.indepth_cover_movil{
+		width: 100%;
+		
+	}
+	
+	.indepth_cover_movil img{
+		width: 100%;
+		display: table;
+	}
+	
+	.indepth_container_cover{
+		display: none;
+	}
+	
+	body{
+		webkit-overflow-scrolling: touch;
+	}
+	
+	.indepth_page_image{
+		height: auto;
+		padding-top: 620px;
+		background-size: 600px auto;
+		
+	}
+	
+}
+
+
+
+
+@media screen and (max-width: 414px) {
+	.indepth_page_image{
+		height: auto;
+		padding-top: 440px;
+		background-size: 414px auto;
+		
+	}
+	
+
+
+}
+	
+@media screen and (max-width: 375px) {
+	
+
+	
+}
+	
+@media screen and (max-width: 360px) {
+
+	
+}
+
+@media screen and (max-width: 320px) {
+	
+	
+}
+
+
+
+@media screen and (max-height: 414px) {
+	
+}
+
+
